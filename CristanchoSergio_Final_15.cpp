@@ -30,8 +30,8 @@ int main(){
     outfile<<0<<","<<x<<","<<y<<std::endl;
     
     for(int i=1; i< 100; i++){
-        vxh = vx + (dt/2)*(q/m)*Ex(i*dt);
-        vyh = vy + (dt/2)*(q/m)*Ey(i*dt);
+        float vxh = vx + (dt/2)*(q/m)*Ex(i*dt);
+        float vyh = vy + (dt/2)*(q/m)*Ey(i*dt);
         x = x + dt*vxh;
         y = y + dt*vyh;
         vx = vxh + (dt/2)*(q/m)*Ex((i+1)*dt);

@@ -1,7 +1,7 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pylab as plt
 
-Datost = np.genfromtxt("Datos15.dat", ",")
+Datost = np.genfromtxt('Datos15.dat',delimiter=',')
 Datos = np.transpose(Datost)
 
 plt.figure()
